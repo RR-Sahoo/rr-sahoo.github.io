@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images\R-Letter-PNG-File.png" type="image/png">
+    <script src="https://kit.fontawesome.com/8e69bc109d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS\project.css">
+    <script src="Javascript\script.js"></script>
+    <title>Rashmi Ranjan Sahoo | Project</title>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="progressbar-left"></div>
+    <div id="scrollpath-left"></div>
+    
+    <div class="head-section">
+        <a href="index.html" class="brand-logo"><img src="images\R-Letter-PNG-File.png" width="70" height="auto" class="logo-img" alt=""></a>
+        <h3 class="heading">Projects</h3>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="imgbx">
+                <img src="images\calculator.png" data-text="Basic Calculator">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Basic Calculator</h3>
+                    <p>It is a basic calculator and can be opend in any type of device. It can perform basic five mathematics operations 
+                        like addition, subtraction, multiplication, division, and modular forms.</p>
+                    <ul>
+                        <li><a href="https://github.com/RR-Sahoo/Basic-Calculator"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://rr-sahoo.github.io/Basic-Calculator/"><i class="fas fa-rocket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="images\Stopwatch.png" data-text="Stopwatch">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Stopwatch</h3>
+                    <p>It is a basic stopwatch with dark-light mode features. 
+                        It contains the play, pause, stop and reset features.</p>
+                    <ul>
+                        <li><a href="https://github.com/RR-Sahoo/Stopwatch"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://rr-sahoo.github.io/Stopwatch"><i class="fas fa-rocket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="images\Password Generator.png" data-text="Password Generator" >
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Password Generator</h3>
+                    <p>This password generator can generate passwords containing upper and lower case alphabets, numbers, special symbols. 
+                        You can copy the password for your use. It can generate passwords of length 8 to 20.</p>
+                    <ul>
+                        <li><a href="https://github.com/RR-Sahoo/Password-Generator"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://rr-sahoo.github.io/Password-Generator"><i class="fas fa-rocket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbx">
+                <img src="images\cafe template.png" data-text="Basic Calculator">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Cafe Template</h3>
+                    <p>It is a responsive cafe template. You can use it for your business purpose.
+
+                    </p>
+                    <ul>
+                        <li><a href="https://github.com/RR-Sahoo/Cafe-Template"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://rr-sahoo.github.io/Cafe-Template/"><i class="fas fa-rocket"></i></a></li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project">
+                <div class="project-heading">
+                    
+                    <h2>Start a project</h2>
+                    
+                </div>
+                <div class="project-info">
+                    <p>Interested in working together? We should queue up a chat.  I’ll buy the coffee.<p>
+                </div>
+                <div class="project-button">
+                    <a href="projectcontact.html" class="btn">Let's do this</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <a href="index.html"><i class="fas fa-home"></i> </a>           
+                </div>
+                <a href="index.html"><span>Home</span></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let progress = document.getElementById('progressbar');
+        let progressLeft=document.getElementById('progressbar-left');
+        let totalHeight= document.body.scrollHeight-window.innerHeight;
+        window.onscroll=function(){
+        let progressHeight=(window.pageYOffset/totalHeight)*100;
+        progress.style.height=progressHeight+"%";
+        progressLeft.style.height=progressHeight+"%";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body{
+    background: rgb(212, 212, 212);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    animation: fadein 2s, translateup 1s;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes translateup{
+    0%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.success h3{
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.success p{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: rgb(212, 212, 212);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-out;
+}
+.wrapper{
+    position: relative;
+    bottom: 0%;
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .button:hover{
+    width: 200px;
+    background: #a26df7;
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon{
+    background: #6d10ff;
+}
+
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper a{
+    text-decoration: none;
+}
+.wrapper .button:hover .icon i{
+    color: #fff;
+}
+.wrapper .button span{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button span{
+    color: #f2f2f2;
+}
